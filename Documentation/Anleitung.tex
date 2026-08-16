@@ -1,0 +1,133 @@
+\documentclass[11pt, a4paper]{article}
+
+% --- Sprache und Enkodierung ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath}
+
+
+% --- Seitenränder ---
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left=25mm,
+    right=25mm,
+    top=25mm,
+    bottom=25mm,
+    headheight=14pt
+}
+
+% --- Typografie & Schriftart ---
+\usepackage{microtype}
+\usepackage{lmodern}
+\renewcommand{\familydefault}{\sfdefault}
+
+% --- Tabellen & Grafiken ---
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float}
+
+% --- Hyperlinks ---
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    urlcolor=blue
+}
+
+% --- Kopf- und Fußzeilen ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\textsl{Good Knight VR}}
+\fancyhead[R]{\textsl{Spielanleitung}}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.0pt}
+
+\title{Good Knight VR Game\\ \large Spielanleitung}
+\author{Hikmet Gözaydin 85987}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\begin{center}
+    \vspace{2cm}
+    \includegraphics[width=0.4\textwidth]{Images/image.png}
+\end{center}
+\newpage
+
+\section{Schritt-für-Schritt-Anleitung}
+
+\subsection{1. Aufsitzen (Start zu Fuß)}
+Das Spiel beginnt in den Stallungen der Arena, wo Sie sich zu Fuß befinden.
+\begin{enumerate}
+    \item Gehen Sie auf Ihr Pferd zu.
+    \item Strecken Sie Ihre rechte Hand aus und platzieren Sie sie über dem Sattel des Pferdes.
+    \item Halten Sie den \textbf{Grip-Button} (mit dem rechten Mittelfinger) gedrückt.
+    \item Ihre Kamera-Sicht schnappt augenblicklich in den Sattel ein, und Sie befinden sich in der Reitposition.
+\end{enumerate}
+
+\subsection{2. Zum Startgatter reiten}
+Suchen Sie die leuchtende Startzone (Ready Zone) auf der Jousting-Bahn:
+\begin{itemize}
+    \item \textbf{Ungerade Runden (1, 3, 5):} Reiten Sie Ihr Pferd in das vordere Gatter (\textit{Forward Gate}).
+    \item \textbf{Gerade Runden (2, 4, 6):} Reiten Sie Ihr Pferd in das hintere Gatter (\textit{Return Gate}).
+\end{itemize}
+Der Schiedsrichter startet den Countdown erst, wenn Ihr Pferd ruhig innerhalb der Begrenzung des Startgatters steht.
+
+\subsection{3. Bereitschaft signalisieren}
+Sobald Sie sich in der korrekten Position im Gatter befinden:
+\begin{enumerate}
+    \item Drücken Sie die \textbf{Y-Taste} auf Ihrem linken Controller.
+    \item Bereiten Sie sich während des 3-sekündigen Countdowns auf den Anritt vor:
+    \begin{quote}
+        \textbf{3...} BEREITEN SIE IHRE LANZE VOR \\
+        \textbf{2...} DECKUNG NEHMEN / SCHILD BEREITEN \\
+        \textbf{1...} ANGRIFF!
+    \end{quote}
+\end{enumerate}
+
+\subsection{4. Der Anritt \& Zusammenstoß}
+Nutzen Sie den \textbf{linken Joystick} Ihres Controllers, um das Pferd die Bahn entlangzureiten und zu lenken.
+\begin{itemize}
+    \item \textbf{Angriff:} Bewegen Sie Ihre physische rechte Hand, um Ihre Lanze präzise auf die Trefferzonen des Gegners (Helm/Kopf oder Torso) auszurichten. Halten Sie dabei die Grip-Taste (Mittelfinger) gedrückt, um die Lanze zu greifen.
+    \item \textbf{Verteidigung:} Heben Sie Ihre linke Hand, um Ihren Schild schützend vor die berechnete Lanzenbahn des Gegners zu halten. Halten Sie dabei die Grip-Taste (Mittelfinger) gedrückt, um den Schild zu greifen.
+    \item Bei einem erfolgreichen Treffer ertönt ein satter, metallischer Plattenrüstungskollision-Sound.
+\end{itemize}
+
+\subsection{5. Zurücksetzen für den nächsten Durchgang}
+Bringen Sie Ihr Pferd nach dem Zusammenstoß manuell zum Stehen (indem Sie den linken Joystick zurückziehen). Während der KI-Gegner eigenständig abbremst und einen Spurwechsel zum gegenüberliegenden Startgatter durchführt, müssen Sie Ihr Pferd wenden und zum nächsten aktiven Gatter reiten, um den nächsten Durchgang zu starten.
+
+\section{Steuerung \& Tastenbelegung}
+Die folgende Tabelle zeigt die Tastenbelegung für VR-Controller (Meta Quest 3s) und Tastatur:
+
+\vspace{0.5cm}
+\noindent
+\begin{tabularx}{\textwidth}{l X}
+    \toprule
+    \textbf{Aktion} & \textbf{VR-Eingabe (Oculus / Index)} \\
+    \midrule
+    \textbf{Aufsitzen (Mount)} & Grip-Taste (Mittelfinger) mit rechter Hand nahe dem Sattel gedrückt halten. \\
+    \textbf{Steuern \& Reiten} & Linker Joystick (zur Richtungs- \& Geschwindigkeitskontrolle). \\
+    \textbf{Bereitschaft (Ready)} & Y-Taste (linker VR-Controller). \\
+    \textbf{Spiel pausieren} & Menü- / Pause-Taste. \\
+    \textbf{Lanze ausrichten} & Physische Bewegung der rechten Hand (VR-Controller). Dabei muss die Grip-Taste (Mittelfinger) gedrückt gehalten werden, um die Lanze festzuhalten. \\
+    \textbf{Schild positionieren} & Physische Bewegung der linken Hand (VR-Controller). Dabei muss die Grip-Taste (Mittelfinger) gedrückt gehalten werden, um den Schild festzuhalten. \\
+    \bottomrule
+\end{tabularx}
+\vspace{0.5cm}
+
+\section{Turnierregeln \& Siegbedingungen}
+Die Entscheidung über den Turniersieg fällt auf eine von drei Arten:
+
+\begin{enumerate}
+    \item \textbf{Absoluter Sieg (Vom Pferd stoßen):} Reduzieren Sie die Lebenspunkte (Health Pool) des Gegners von $100$ auf $0$, um ihn aus dem Sattel zu werfen.
+    \item \textbf{Technischer Knockout (Entwaffnung):} Treffen Sie wiederholt den rechten Arm des Gegners, um dessen Waffenarm-Lebenspunkte ($30\,\text{HP}$) auf $0$ zu reduzieren. Dadurch verliert er seine Lanze und das Turnier gilt als gewonnen.
+    \item \textbf{Entscheidung nach Punkten:} Überleben beide Kontrahenten alle 6 Durchgänge, gewinnt der Ritter mit den meisten verbleibenden Lebenspunkten. Bei gleichem HP-Stand endet das Turnier unentschieden.
+\end{enumerate}
+
+\end{document}
